@@ -226,6 +226,7 @@ h2{
     width: 80%;
     text-align: center;
     border-radius: 25px;
+    animation: animateSkillsToEighty 2s;
 }
 
 #soixante{
@@ -233,6 +234,7 @@ h2{
     width: 60%;
     text-align: center;
     border-radius: 25px;
+    animation: animateSkillsToSixty 2s;
 }
 
 #cinquante{
@@ -240,6 +242,34 @@ h2{
     width: 50%;
     text-align: center;
     border-radius: 25px;
+    animation: animateSkillsToFifty 2s;
+}
+
+@keyframes animateSkillsToFifty{
+    from{ 
+    width: 0%;
+    }
+    to {
+    width: 50%;
+    }
+}
+
+@keyframes animateSkillsToSixty{
+    from{ 
+    width: 0%;
+    }
+    to {
+    width: 60%;
+    }
+}
+
+@keyframes animateSkillsToEighty{
+    from{ 
+    width: 0%;
+    }
+    to {
+    width: 60%;
+    }
 }
 
 @media (max-width: 680px){
