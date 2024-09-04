@@ -1,0 +1,133 @@
+.page {
+width: 95vw;
+margin: auto;
+padding-left: 10px;
+font-family: "source sans pro", Colibri, Tahoma, sans-serif;
+font-size: 16px;
+
+}
+
+
+.infophoto{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+   width: 230px;
+}
+
+#decription {
+    display: flex;
+    align-items: flex-end;
+}
+
+.section{
+margin-bottom: 70px;
+text-align: justify;
+}
+
+.date{
+float: left;
+font-weight: bold;
+font-size: 18px;
+}
+
+.texte{
+margin-left: 150px; 
+text-align: justify;
+margin-top: 39px;
+}
+
+h2 {
+text-align: center;
+font-size: 28px;
+color: #3388BB;
+border-bottom: 2px solid black ;
+}
+
+.titre{
+font-weight: bold;
+font-size: 16px;
+}
+
+#pro1 > p{ 
+margin-bottom: 30px ;
+margin-right: 10px;
+}
+
+#forma1 > p{
+    margin-bottom: 31px;
+}
+
+#ling > p {
+    margin-bottom: 5px;
+}
+
+#compet > p{
+    margin-top: 13px;
+}
+
+#sport > p{
+    margin-top: 13px;
+}
+
+#photoprofil {
+    width: 14vw;
+    height: 30vh;
+    margin-top: 5px;
+}
+.lien-reseau{
+    width: 4vw;
+    gap: 5 px;
+    }
+
+ .text-deco{
+    text-decoration: none;
+    }
+
+@media (max-width: 600px){
+    #photoprofil{
+        width: 30vw;
+        height: 20vh;
+        margin-top: 10px;
+    }
+
+    .page{ 
+        width: 130vw;
+       
+
+    }
+ 
+    .texte{
+        font-size: 15px;
+         margin-right: 10px;
+
+    }
+   
+
+    #reseau{
+        width: 90vw;
+        margin: 10px;
+    }
+
+    .lien-reseau{
+        width: 8vw;
+    }
+   
+    .titre{
+        font-size: 15px;
+
+    }
+
+   
+    .date{
+        font-size: 16px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+body {
+    background: url(./fondecran2.htm);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+   }
+   
+   header {
+       height: 20vh;
+   }
+   nav{
+       justify-content: flex-end;
+       width: 100%;
+       height: 10vh;
+       font-size: 18px;
+       font-weight: bold;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       display: flex;
+       background-color: darkslategray;
+       position: fixed;
+       top: 0;
+       left: 0;
+       color: white;
+   }
+   
+   #page-list{
+       display: flex;
+       justify-content: space-between;
+       gap: 2vw;
+       width: 40vw;
+       margin-right: 10px;
+       list-style: none;
+   }
+   
+   a{
+       color: white;
+       text-decoration: none;
+       gap: 2px;
+   }
+   
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#coordonnée{
+    font-weight: bold;
+}

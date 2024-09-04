@@ -1,0 +1,314 @@
+body {
+    display: flex;
+    gap: 5vw;
+    margin-left: 5vw; 
+    margin-top: 5vh;
+    align-items: stretch;   
+    /* // quand on aggrandi un coté, l'autre s'aggrandi automatiquement */
+}
+
+#left-part{
+flex-basis: 30vw;
+background-color: grey;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+border-radius: 25px;
+box-shadow: 0.8vw 1vh purple;
+}
+
+#left-part * {
+color: white;
+}
+
+#right-part{
+flex-basis: 55vw;
+display: flex;
+flex-direction: column;
+gap: 2vh;
+justify-content: space-between;
+
+}
+
+#img-profil {
+    width: 6vw;
+}
+
+#header-left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+   
+}
+
+.info{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.info-value{
+    text-align: end;
+}
+
+.info-name{
+    width: 15vw;
+}
+#info-left-part{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-interet {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 1vh;
+    width: 25vw;
+    font-size: medium; 
+}
+
+#group-button{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1vh;
+
+}
+
+#interet-left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reseaux-left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 10px;
+}
+
+#right-part > div{
+    border: 2px solid blue;
+    border-radius: 25px;
+    box-shadow: 0.5vw 1vh purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+   
+}
+
+
+.header-formation, .content-formation{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+    width: 60%;
+    
+}    
+
+h2{
+    text-transform: uppercase;
+}
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border:1px solid blue;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    box-shadow: -0.3vw -0.5vh blue;
+}
+
+.intitule-formation, .centre-formation {
+    flex-basis: 65%;
+    text-align: end;
+}
+
+.date-formation, .ville-formation{
+    flex-basis: 35%;
+}
+
+#formation-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border:1px solid blue;
+    border-radius: 25px;
+    box-shadow: -0.3vw -0.5vh blue;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.header-experience{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 2vw;
+}
+
+.date-experience{
+    flex-basis: 35%;
+}
+
+.intitule-experience{
+    flex-basis: 65%;
+    text-align: end;
+}
+
+.entreprise-experience, .list-mission{
+    width: 60%;
+}
+
+.list-mission > li {
+    list-style:"\2794"; 
+
+}
+
+#experience-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+.competence > img{
+    width: 40px;
+}
+
+.competence > h3{
+    width: 3vw;
+}
+
+.competence{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.range{
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 25px;
+    margin-left: 2vw;
+
+}
+
+#quatre-vingt{
+    background-color: blue;
+    width: 80%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#soixante{
+    background-color: blue;
+    width: 60%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#cinquante{
+    background-color: blue;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+@media (max-width: 680px){
+    body{
+        flex-direction: column;
+    }
+
+    #img-profil {
+        width: 30vw;
+    }
+    .info-name, .info-value{
+        width: auto;
+    }
+    #group-button{
+        flex-direction: row;
+    }
+    #reseaux-left-part{
+        padding-top: 0vh;
+    }
+    .header-formation, .content-formation, .header-experience{
+        width: 90%;
+    }
+
+   .intitule-formation, .date-formation, .ville-formation, .centre-formation {
+    flex-basis: auto;
+    }
+
+    .formation, .experience{
+        width: 98%;
+        padding: 1vh 2vw;
+       font-size: 13px;
+    }
+
+    #right-part > div{
+        margin: 0;
+        padding: 1vh 5vw;
+    }
+    #experience-part > h2{
+        text-align: center;
+    }
+
+    .header-experience{
+        text-align: center;
+        padding-bottom: 1vh;
+        margin-bottom: 1vh;
+        border-bottom: 1px solid blue;
+
+    }
+
+    .entreprise-experience, .list-mission{
+        width: auto;
+    }
+    .competence{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1vh;
+        margin-bottom: 1vh;
+        border-bottom: 1px solid blue;
+        gap: 0.3vh;
+    }
+
+    .competence > h3{
+        width: auto;
+        display: none;
+    }
+
+    .range{
+        width: 100%;
+    }
+
+
+}
